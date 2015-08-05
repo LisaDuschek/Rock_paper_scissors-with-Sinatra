@@ -21,3 +21,8 @@ get('/results') do
   @winner = params.fetch('player_1').beats(params.fetch('player_2'))
   erb(:results)
 end
+
+get('/results_one_player') do
+  @winner = params.fetch('player_1').beats()
+  erb(:results_one_player)
+end
