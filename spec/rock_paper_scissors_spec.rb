@@ -1,8 +1,8 @@
 require('rspec')
-require('beats')
+require('rock_paper_scissors')
+require('pry')
 
-
-describe('String#beats') do
+describe('String#rock_paper_scissors') do
 
 #   it("return the winner for Rock vs. scissors") do
 #     expect(rock_paper_scissors("rock","scissors")).to(eq(1))
@@ -29,15 +29,15 @@ describe('String#beats') do
 # end
 
   it("return true if rock is the object and scissors is the argument") do
-    expect("rock".beats("scissors")).to(eq(true))
+    expect("rock".beats("scissors")).to(eq("Player 1"))
   end
 
   it("return true if scissors is the object and paper is the argument") do
-    expect("scissors".beats("paper")).to(eq(true))
+    expect("scissors".beats("paper")).to(eq("Player 1"))
   end
 
   it("return false if rock is the object and paper is the argument") do
-    expect("paper".beats("rock")).to(eq(true))
+    expect("paper".beats("rock")).to(eq("Player 1"))
   end
 
   it("return tie if scissors is the object and scissors is the argument") do

@@ -6,12 +6,12 @@ class String
     if ((self == "rock" && player == "scissors") ||
         (self == "scissors" && player =="paper") ||
         (self =="paper" && player == "rock"))
-       true
+       "Player 1"
      elsif
        self == player
         "tie"
      else
-       false
+       "Player 2"
      end
   end
 end
