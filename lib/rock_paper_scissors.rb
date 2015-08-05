@@ -17,7 +17,7 @@ class String
 end
 
 class String
-  define_method(:beats) do
+  define_method(:computer) do
 
     value = rand(3)
 

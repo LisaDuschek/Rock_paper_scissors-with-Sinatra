@@ -23,6 +23,6 @@ get('/results') do
 end
 
 get('/results_one_player') do
-  @winner = params.fetch('player_1').beats()
+  @winner = params.fetch('player_1').computer()
   erb(:results_one_player)
 end
